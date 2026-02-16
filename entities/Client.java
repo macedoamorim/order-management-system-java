@@ -1,6 +1,7 @@
 package entities;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Client {
@@ -11,10 +12,10 @@ public class Client {
 	private String email;
 	private Date birthDate;
 	
-	public Client(String name, String email, Date birthDate) {
+	public Client(String name, String email, Date clientBirthDate) {
 		this.name = name;
 		this.email = email;
-		this.birthDate = birthDate;
+		this.birthDate = clientBirthDate;
 	}
 
 	public String getName() {
